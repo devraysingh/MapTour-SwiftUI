@@ -17,8 +17,8 @@ struct LocationsListView: View {
                 Button {
                     vm.nextLocation(location: location)
                 } label: {
-                    listRowView(location: location).padding(.vertical, 4)
-                }
+                    listRowView(location: location)
+                }.padding(.vertical, 4).listRowBackground(Color.clear)
             }
         }.listStyle(PlainListStyle())
     }
